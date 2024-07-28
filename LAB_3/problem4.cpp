@@ -69,13 +69,6 @@ int main()
     int hr, min, sec;
     cout << "Enter time in 24-hour format :" << endl << "Enter hour minute and second : ";
     cin >> hr >> min >> sec;
-    string conf;
-    cout<< "AM or PM : ";
-    cin >> conf;
-    if (conf="am" && hr == 12) 
-    {
-        hr = 00;
-    }
     twentyfour t24(hr, min, sec);
     cout << "24-hour format: ";
     t24.display();
