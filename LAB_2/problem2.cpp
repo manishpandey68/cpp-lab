@@ -27,6 +27,8 @@ public:
     friend bool operator<(USD &U, NPR &N);
     friend bool operator==(USD &U, NPR &N);
     friend bool operator!=(USD &U, NPR &N);
+    friend bool operator>=(USD &U, NPR &N);
+    friend bool operator<=(USD &U, NPR &N);
 };
 
 class NPR
@@ -49,6 +51,8 @@ public:
     friend bool operator<(USD &U, NPR &N);
     friend bool operator==(USD &U, NPR &N);
     friend bool operator!=(USD &U, NPR &N);
+    friend bool operator>=(USD &U, NPR &N);
+    friend bool operator<=(USD &U, NPR &N);
 };
 
 bool operator>(USD &U, NPR &N)
