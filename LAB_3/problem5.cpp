@@ -14,7 +14,7 @@ class twelve
 
 public:
     twelve() {}
-    twelve(int h, int m, int s, string am) : hr(h), min(m), sec(s), ampm(am) {}
+        twelve(int h, int m, int s) : hr(h), min(m), sec(s){}
 
     operator twentyfour();
 
@@ -76,16 +76,14 @@ twelve::operator twentyfour()
 int main()
 {
     int hr, min, sec;
-    string ampm;
+    string am+
+    pm;
 
     cout << "Enter hour minutes and second in 12 hour format : ";
     cin >> hr >> min >> sec;
-
-    cout << "Is it am or pm (am/pm) : ";
-    cin >> ampm;
     
     twentyfour t24;
-    twelve t12(hr, min, sec, ampm);
+    twelve t12(hr, min, sec);
 
     t24 = t12;
 

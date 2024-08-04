@@ -14,7 +14,7 @@ class twentyfour  {
             min = m;
             sec = s;
         }
-
+    
         int getHr() {
             return hr;
         }
@@ -73,7 +73,10 @@ int main()
     cout << "24-hour format: ";
     t24.display();
 
-    twelve t12(t24);
+    twelve t12;
+
+    t12 = t24;
+
     cout << "12-hour format: ";
     t12.display();
 
